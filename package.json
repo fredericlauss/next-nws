@@ -10,6 +10,8 @@
   },
   "dependencies": {
     "@supabase/supabase-js": "^2.49.4",
+    "@types/bcryptjs": "^2.4.6",
+    "bcryptjs": "^3.0.2",
     "lottie-react": "^2.4.1",
     "next": "15.2.4",
     "react": "^19.0.0",
