@@ -60,6 +60,12 @@ export default function RootLayout({
             >
               Nos Bières (client suspense)
             </Link>
+            <Link 
+              href="/blog" 
+              className="hover:text-gray-300 transition-colors"
+            >
+              Blog
+            </Link>
           </div>
         </nav>
         <main>
