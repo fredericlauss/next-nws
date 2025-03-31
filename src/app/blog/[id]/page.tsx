@@ -30,7 +30,7 @@ export default async function ArticlePage({ params }: PageProps) {
     <div className="container mx-auto p-4">
       <article className="prose lg:prose-xl mx-auto">
         <h1>{article.title}</h1>
-        <div className="mt-4">
+        <div className="mt-2">
           {article.content}
         </div>
       </article>
