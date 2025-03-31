@@ -48,6 +48,18 @@ export default function RootLayout({
             >
               Contact
             </Link>
+            <Link 
+              href="/coffee" 
+              className="hover:text-gray-300 transition-colors"
+            >
+              Nos Cafés (SSR)
+            </Link>
+            <Link 
+              href="/beers" 
+              className="hover:text-gray-300 transition-colors"
+            >
+              Nos Bières (CSR)
+            </Link>
           </div>
         </nav>
         <main>
