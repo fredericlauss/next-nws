@@ -1,4 +1,5 @@
 import RegisterForm from '@/components/registerForm'
+import { Toaster } from 'react-hot-toast'
 
 export default function RegisterPage() {
   return (
@@ -10,6 +11,7 @@ export default function RegisterPage() {
           </h2>
         </div>
         <RegisterForm />
+        <Toaster position="top-right" />
       </div>
     </div>
   )

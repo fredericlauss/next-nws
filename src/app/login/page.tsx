@@ -1,4 +1,5 @@
 import LoginForm from '@/components/loginForm'
+import { Toaster } from 'react-hot-toast'
 
 export default function LoginPage() {
   return (
@@ -10,6 +11,7 @@ export default function LoginPage() {
           </h2>
         </div>
         <LoginForm />
+        <Toaster position="top-right" />
       </div>
     </div>
   )

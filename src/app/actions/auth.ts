@@ -22,12 +22,12 @@ export async function login(formData: FormData) {
       .single()
 
     if (!user) {
-      return { error: 'Utilisateur non trouvé' }
+      return { error: 'Wrong username or password' }
     }
 
     const validPassword = await bcrypt.compare(password, user.password)
     if (!validPassword) {
-      return { error: 'Mot de passe incorrect' }
+      return { error: 'Wrong username or password' }
     }
 
     const session = {
@@ -62,7 +62,7 @@ export async function register(formData: FormData) {
       .single()
 
     if (existingUser) {
-      return { error: 'Nom d\'utilisateur déjà pris' }
+      return { error: 'Username already taken' }
     }
 
     const hashedPassword = await bcrypt.hash(password, 10)
