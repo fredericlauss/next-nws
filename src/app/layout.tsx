@@ -58,7 +58,7 @@ export default function RootLayout({
               href="/beers" 
               className="hover:text-gray-300 transition-colors"
             >
-              Nos Bières (CSR)
+              Nos Bières (client suspense)
             </Link>
           </div>
         </nav>
