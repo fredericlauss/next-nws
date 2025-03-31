@@ -3,6 +3,7 @@ import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import Link from "next/link";
 import { cookies } from 'next/headers'
+import LogoutButton from "@/components/logoutButton";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -84,12 +85,7 @@ export default async function RootLayout({
                   <span className="text-gray-400">
                     {user.username}
                   </span>
-                  <Link
-                    href="/logout"
-                    className="bg-red-600 hover:bg-red-700 px-3 py-1 rounded-md transition-colors"
-                  >
-                    Déconnexion
-                  </Link>
+                  <LogoutButton />
                 </>
               ) : (
                 <>

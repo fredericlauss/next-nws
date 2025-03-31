@@ -7,8 +7,8 @@ export default function Home() {
       <h1>Accueil</h1>
       <p>Bienvenue sur notre site!</p>
       
-      <div className="relative w-1/4 aspect-[4/3] my-4">
-        <Image
+      <div className="relative w-1/2 aspect-[4/3] my-4">
+      <Image
           src={map}
           alt="Carte du monde"
           fill
